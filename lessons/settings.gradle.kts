@@ -1,16 +1,13 @@
 pluginManagement {
     plugins {
         val kotlinVersion: String by settings
-        kotlin("jvm") version kotlinVersion apply false
+        kotlin("jvm") version kotlinVersion
     }
 }
 
 plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.5.0"
 }
-
 rootProject.name = "ot-mp-202408"
 
-
-includeBuild("lessons")
-includeBuild("order-aggregator-be")
+include("m1l1-first")
